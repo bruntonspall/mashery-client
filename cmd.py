@@ -15,4 +15,5 @@ if __name__ == "__main__":
     import sys
     method = sys.argv[1]
     args = [int_if(v) for v in sys.argv[2:]]
-    print(json.dumps(json.loads(mashery.call_api_httplib(live, method, args)), indent=2))
+    print """Calling %s with method "%s" and params [%s]""" % (live.path, method, args)
+    print(json.dumps(json.loads(mashery.call_api_httplib(live, method, *args)), indent=2))
