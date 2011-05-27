@@ -1,0 +1,15 @@
+{
+    "sandbox": {
+        "host": "api.sandbox.mashery.com",
+        "path": "/v2/json-rpc/1",
+        "key": "YOUR_SANDBOX_KEY_HERE",
+        "secret": "SECRET"
+    },
+    "live": {
+        "host": "api.mashery.com",
+        "path": "/v2/json-rpc/1",
+        "key": "YOUR_KEY_HERE",
+        "secret": "SECRET"
+    }
+}
+
